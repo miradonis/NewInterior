@@ -72,6 +72,21 @@ a {
 }
 
 
+/* *============== HOVER ================= */
+/* ?===== BURGER MENU CHANGE TO CROSS */
+.burgerMenu:hover div:nth-child(1) {
+    transform: translateY(10px) rotate(45deg); /* Turn the first line into the top part of the cross */
+}
+
+.burgerMenu:hover div:nth-child(2) {
+    opacity: 0; /* Hide the middle line to form the cross */
+}
+
+.burgerMenu:hover div:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg); /* Turn the third line into the bottom part of the cross */
+}
+
+
 /* *================ HEADER ================ */
 header {
     padding: 3% 5%;
@@ -102,6 +117,19 @@ header nav p {
     background-color: whitesmoke;
     margin-bottom: 5px;
     border-radius: 3px;
+    transition: all 0.3s ease; /* Füge eine Transition für eine sanfte Animation hinzu */
+}
+
+.burgerMenu:hover div:nth-child(1) {
+    transform: translateY(10px) rotate(45deg); /* Verwandle die erste Linie in das obere Teil des Kreuzes */
+}
+
+.burgerMenu:hover div:nth-child(2) {
+    opacity: 0; /* Verstecke die mittlere Linie, um das Kreuz zu formen */
+}
+
+.burgerMenu:hover div:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg); /* Verwandle die dritte Linie in das untere Teil des Kreuzes */
 }
 
 h1 {
