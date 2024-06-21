@@ -1,0 +1,199 @@
+@font-face {
+    font-family: "AlegreyaBold";
+    src: url("../fonts/Alegreya/AlegreyaSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: "AlegreyaRegular";
+    src: url("../fonts/Alegreya/AlegreyaSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "AlegreyaVar";
+    src: url("../fonts/Alegreya/Alegreya-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "NixieOne";
+    src: url("../fonts/Nixie_One/NixieOne-Regular.ttf");
+}
+
+
+
+/* *=========== GENERELLES STYLING ========== */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.btn-view-all {
+    font-family: Helvetica;
+    font-size: clamp(1rem, 2vw, 2.5rem);
+    border: 2px solid black;
+    padding: 1%;
+}
+
+.heading-sections {
+    font-family: "AlegreyaRegular";
+    font-size: clamp(2rem, 3vw, 5rem);
+    margin-bottom: 3vh;
+}
+
+.our-latest-works article:nth-of-type(1),
+.blog article:nth-of-type(1) {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-bottom: 15vh;
+}
+
+
+/* *================ HEADER ================ */
+header {
+    padding: 3% 5%;
+    background-image: url("../img/header.png");
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke;
+    text-align: center;
+    height: 100vh;
+    box-shadow: 0px 0px 20px black;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25vh;
+}
+
+header nav p {
+    font-family: "AlegreyaVar";
+    font-size: clamp(1.5rem, 2.5vw, 4rem)
+}
+
+.burgerMenu div {
+    height: 5px;
+    width: 35px;
+    background-color: whitesmoke;
+    margin-bottom: 5px;
+    border-radius: 3px;
+}
+
+h1 {
+    font-family: "NixieOne";
+    font-weight: lighter;
+    font-size: clamp(3rem, 6vw, 7rem);
+}
+
+header article p {
+    font-family: "AlegreyaVar";
+    font-size: clamp(2rem, 2vw, 2rem);
+    color: rgba(245, 245, 245, 0.553);
+}
+
+
+/* *============= OUR LATEST WORKS ============= */
+.our-latest-works {
+    padding: 20vh 15vw;
+}
+
+.our-latest-works article div p {
+    font-family: Helvetica;
+    font-weight: lighter;
+    font-size: clamp(1rem, 1.5vw, 2rem);
+}
+
+/* ?Gallerie */
+.gallerie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.gallerie img {
+    width: 20vw;
+    height: 25vh;
+    object-fit: cover;
+    margin-bottom: 5%;
+}
+
+
+/* *============= OUR SERVICES ============= */
+
+.our-services {
+    background-image: url("../img/bgOurServices.png");
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke;
+    text-align: center;
+    padding: 5% 2%;
+}
+
+.bg-color-box {
+    background-color: rgba(101, 101, 101, 0.449);
+    width: 80%;
+    margin: 0 auto;
+    padding: 5%;
+}
+
+.our-services article:nth-of-type(1) article {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-box {
+    width: 22%;
+    font-family: Helvetica;
+}
+
+.icon-box p:nth-of-type(1) {
+    font-size: clamp(1rem, 1.5vw, 2.5rem);
+    margin: 4% 0 10% 0;
+}
+
+.icon-box p:nth-of-type(2) {
+    font-size: clamp(1rem, 1.5vw, 1.8rem);
+    font-weight: lighter;
+}
+
+
+/* *============= FROM THE BLOG ============= */
+.blog {
+    padding: 20vh 15vw;
+}
+
+.blog article:nth-of-type(1) p {
+    font-family: Helvetica;
+    font-weight: lighter;
+    font-size: clamp(1rem, 1.5vw, 2rem);
+}
+
+.blog article:nth-of-type(2) {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog article:nth-of-type(2) div {
+    width: 30%;
+}
+
+.blog article:nth-of-type(2) div h3 {
+    font-family: "AlegreyaRegular";
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    margin: 2% 0 4% 0;
+}
