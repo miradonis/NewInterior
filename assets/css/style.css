@@ -312,3 +312,89 @@ header article p {
     color: rgb(35, 35, 35);
     font-size: clamp(1rem, 1vw, 1.3rem);
 }
+
+
+/* *============= FOOTER ============= */
+footer {
+    background-image: url("../img/footerBG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 5% 0 0 0;
+    text-align: center;
+    color: whitesmoke;
+}
+
+footer .bg-color-footer-box {
+    background-color: rgba(101, 101, 101, 0.449);
+    width: 80%;
+    margin: 0 auto;
+    padding: 5%;
+}
+
+footer .bg-color-footer-box .footer-text {
+    margin-bottom: 5vh;
+}
+
+footer .bg-color-footer-box .heading-sections {
+    color: whitesmoke;
+    margin-bottom: 1vh;
+}
+
+footer .bg-color-footer-box .footer-text p {
+    font-size: clamp(1rem, 1vw, 1.5rem);
+    font-family: "AlegreyaRegular";
+}
+
+/* ?FORMULAR */
+form {
+    width: 25vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+input:nth-of-type(1),
+input:nth-of-type(2), 
+textarea {
+    background-color: transparent;
+    display: block;
+    border-radius: 5px;
+    border: 1px solid whitesmoke;
+    padding: 2% 5% 2% 2%;
+    margin-bottom: 3%;
+    font-family: "Helvetica";
+}
+
+textarea {
+    resize: none;
+}
+
+::placeholder,
+input {
+    color: whitesmoke;
+    font-family: "Helvetica";
+}
+
+input[type="submit"] {
+    width: 25%;
+    margin: 0 auto;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid whitesmoke;
+    padding: 2% 0;
+    cursor: pointer;
+}
+
+/* ?COPYRIGHT BOX */
+footer .copyright-box {
+    background-color: #2b3e51;
+    padding: 3% 10%;
+    margin-top: 4%;
+    text-align: left;
+}
+
+footer .copyright-box p {
+    font-size: clamp(1rem, 1vw, 1.5rem);
+    font-family: "Helvetica";
+}
