@@ -72,6 +72,49 @@ a {
 }
 
 
+/* *============== HOVER ================= */
+/* ?===== BURGER MENU CHANGE TO CROSS AND OPENS A DROPDOWN MENU */
+.burgerMenu:hover div:nth-child(1) {
+    transform: translateY(10px) rotate(45deg); /* Turn the first line into the top part of the cross */
+}
+
+.burgerMenu:hover div:nth-child(2) {
+    opacity: 0; /* Hide the middle line to form the cross */
+}
+
+.burgerMenu:hover div:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg); /* Turn the third line into the bottom part of the cross */
+    position: relative;
+}
+
+/* ? STYLE DROPDOWN MENU */
+.dropdown-content {
+    display: none;
+}
+
+.burgerMenu:hover .dropdown-content {
+    display: inline-block;
+    position: absolute;
+    right: 100px;
+    border: 1px solid whitesmoke;
+    background-color: rgba(245, 245, 245, 0.722);
+    border-radius: 5px;
+    padding: 2% 2% 1% 2%;
+}
+
+.burgerMenu:hover .dropdown-content a {
+    display: block;
+    font-size: clamp(1rem, 1.5vw, 1.8rem);
+    font-family: "AlegreyaRegular";
+    margin-bottom: 15%;
+}
+
+.burgerMenu:hover .dropdown-content a:hover {
+    color: #4da7ca;
+    
+}
+
+
 /* *================ HEADER ================ */
 header {
     padding: 3% 5%;
@@ -102,6 +145,7 @@ header nav p {
     background-color: whitesmoke;
     margin-bottom: 5px;
     border-radius: 3px;
+    transition: all 0.3s ease; /* Füge eine Transition für eine sanfte Animation hinzu */
 }
 
 h1 {
